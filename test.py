@@ -116,12 +116,93 @@
 #else:
 #    print('Zadana cisla jsou stejna.')
 
-a = float(input('Napis cislo: '))
-if a < 20 and a > 10:
-    print('je v intervalu')
-elif a == 20:
-    print('je vyssi interval')
-elif a == 10:
-    print('je mensi interval')
+#a = float(input('Napis cislo: '))
+#if a < 20 and a > 10:
+#    print('je v intervalu')
+#elif a == 20:
+#    print('je vyssi interval')
+#elif a == 10:
+#    print('je mensi interval')
+#else:
+#    print('Mimo interval')
+
+#a = int(input('Napis cislo: '))
+#if a%2 == 0:
+#    print('sude')
+#else:
+#    print('liche')
+
+#a = int(input('Prvni strana: '))
+#b = int(input('Druha strana: '))
+#c = int(input('Treti strana: '))
+#s = (a+b+c)/2
+#S = (s*(s-a)*(s-b)*(s-c))**(1/2)
+#print(f'Obsah trojuhelniku: {S}')
+
+#import math
+#d = float(input('Prumer sudu: '))
+#v = float(input('Vyska sudu: '))
+#V = ((math.pi * (d/2)**2 * v)*1000)
+#print(f'Objem sudu v litrech je: {V}')
+#l = float(input('Mnozstvi vody: '))
+#a = V - l
+#if a > 0:
+#    print('Vejde se')
+#    print(f'Voda je ve vysce: {v * (l/V)} metru')
+#elif a < 0:
+#    print('Nevejde se')
+#else:
+#    print('Plno')
+
+#import math
+#a = float(input('Prvni strana: '))
+#b = float(input('Druha strana: '))
+#c = float(input('Treti strana: '))
+#if a <= 0 or b <= 0 or c <= 0:
+#    print('Kladne hodnoty vlozte')
+#elif (a+b>c) and (a+c>b) and (b+c>a):
+#    print('Lze sestavit')
+#    if (a**2)+(b**2)==(c**2) or (a**2)==(b**2)+(c**2) or (a**2)+(c**2)==(b**2):
+#        print('Pravouhly')
+#    elif (a**2)+(b**2)<(c**2) or (a**2)>(b**2)+(c**2) or (a**2)+(c**2)<(b**2):
+#        print('Tupouhly')
+#    else:
+#        print('Ostrouhly')
+#else:
+#    print('Nelze sestavit')
+
+#import math
+#a = float(input('Prvni cislo: '))
+#b = float(input('Druhe cislo: '))
+#c = float(input('Treti cislo: '))
+#d = b**2 - 4*a*c
+#if d < 0:
+#    print('Nema reseni')
+#elif d == 0:
+#    print(-b / 2 * a)
+#else:
+#   print((-b + math.sqrt(d)) / 2 * a)
+#   print((-b - math.sqrt(d)) / 2 * a)
+
+import math
+x1 = float(input('Prvni souradnice x: '))
+y1 = float(input('Druha souradnice y: '))
+x2 = float(input('Prvni souradnice x: '))
+y2 = float(input('Druha souradnice y: '))
+if((x2-x1) == 0):
+    print('Lezi v nekonecnu')
 else:
-    print('Mimo interval')
+    c = (y2 - y1) / (x2 - x1)  
+    d = math.degrees(math.atan(c))
+    print(d)
+
+x1 = float(input('Prvni souradnice x: '))
+y1 = float(input('Druha souradnice y: '))
+x2 = float(input('Prvni souradnice x: '))
+y2 = float(input('Druha souradnice y: '))
+x3 = float(input('Prvni souradnice x: '))
+y3 = float(input('Druha souradnice y: '))
+if ((x2-x1) == (x3-x2)):
+
+
+
