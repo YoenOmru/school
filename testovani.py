@@ -184,25 +184,25 @@
 #   print((-b + math.sqrt(d)) / 2 * a)
 #   print((-b - math.sqrt(d)) / 2 * a)
 
-import math
-x1 = float(input('Prvni souradnice x: '))
-y1 = float(input('Druha souradnice y: '))
-x2 = float(input('Prvni souradnice x: '))
-y2 = float(input('Druha souradnice y: '))
-if((x2-x1) == 0):
-    print('Lezi v nekonecnu')
+#import math
+#x1 = float(input('Prvni souradnice x: '))
+#y1 = float(input('Druha souradnice y: '))
+#x2 = float(input('Prvni souradnice x: '))
+#y2 = float(input('Druha souradnice y: '))
+#if((x2-x1) == 0):
+#    print('Lezi v nekonecnu')
+#else:
+#    c = (y2 - y1) / (x2 - x1)  
+#    d = math.degrees(math.atan(c))
+#    print(d)
+
+x1 = int(input('Prvni souradnice x: '))
+y1 = int(input('Druha souradnice y: '))
+x2 = int(input('Prvni souradnice x: '))
+y2 = int(input('Druha souradnice y: '))
+x3 = int(input('Prvni souradnice x: '))
+y3 = int(input('Druha souradnice y: '))
+if ((x2-x1) == (x3-x2) == (x3-x1)):
+    print('Dobre')
 else:
-    c = (y2 - y1) / (x2 - x1)  
-    d = math.degrees(math.atan(c))
-    print(d)
-
-x1 = float(input('Prvni souradnice x: '))
-y1 = float(input('Druha souradnice y: '))
-x2 = float(input('Prvni souradnice x: '))
-y2 = float(input('Druha souradnice y: '))
-x3 = float(input('Prvni souradnice x: '))
-y3 = float(input('Druha souradnice y: '))
-if ((x2-x1) == (x3-x2)):
-
-
-
+    print('Spatne')
