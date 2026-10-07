@@ -196,18 +196,18 @@
 #    d = math.degrees(math.atan(c))
 #    print(d)
 
-x1 = int(input('Prvni souradnice x: '))
-y1 = int(input('Druha souradnice y: '))
-x2 = int(input('Prvni souradnice x: '))
-y2 = int(input('Druha souradnice y: '))
-x3 = int(input('Prvni souradnice x: '))
-y3 = int(input('Druha souradnice y: '))
-x4 = x2 - x1
-y4 = y2 - y1
-a = -x4
-b = y4
-c = -a*x1 - b*y1
-if(a*x3 + b*y3 + c == 0):
-    print('Lezi na primce')
-else:
-    print('Nelezi na primce')
+#x1 = int(input('Prvni souradnice x: '))
+#y1 = int(input('Druha souradnice y: '))
+#x2 = int(input('Prvni souradnice x: '))
+#y2 = int(input('Druha souradnice y: '))
+#x3 = int(input('Prvni souradnice x: '))
+#y3 = int(input('Druha souradnice y: '))
+#x4 = x2 - x1
+#y4 = y2 - y1
+#a = -x4
+#b = y4
+#c = -a*x1 - b*y1
+#if(a*x3 + b*y3 + c == 0):
+#    print('Lezi na primce')
+#else:
+#    print('Nelezi na primce')
