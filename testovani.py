@@ -202,7 +202,12 @@ x2 = int(input('Prvni souradnice x: '))
 y2 = int(input('Druha souradnice y: '))
 x3 = int(input('Prvni souradnice x: '))
 y3 = int(input('Druha souradnice y: '))
-if ((x2-x1) == (x3-x2) == (x3-x1)):
-    print('Dobre')
+x4 = x2 - x1
+y4 = y2 - y1
+a = -x4
+b = y4
+c = -a*x1 - b*y1
+if(a*x3 + b*y3 + c == 0):
+    print('Lezi na primce')
 else:
-    print('Spatne')
+    print('Nelezi na primce')
