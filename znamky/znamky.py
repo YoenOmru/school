@@ -23,13 +23,16 @@ def average(values:list[int])->float|None:
     average=sum / len(values)
     return average
 
-def load_grades(filename:str):
-    lines = read_lines(filename)
-    for line in lines:
-        parse_line(line)
-    #TODO
+def load_grades(filename:str)->dict[str,list[int]]:
+    grades_by_subject:dict[str,list[int]] = {}
+    for line in read_lines(filename):
+        subj, grades = parse_line(line)
+        grades_by_subject[subj] = grades
+    return grades_by_subject
+
 
 if __name__ == '__main__':
 # print(read_lines(r'C:\Users\lukim\Desktop\skola\znamky\znamky.txt'))
     # print(parse_line('CJ:5, 4, 1, 3'))
-    print(average([1,2,3]))
+    #print(average([1,2,3]))
+    print(load_grades)
